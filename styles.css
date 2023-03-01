@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) repeat(4, 1fr)
+}
+
+/* Navbar Styles */
+
+.nav {
+    grid-column: 2 / 6;
+    grid-row: 1 / 2;
+    box-shadow: 0px 2px 2px darkgrey;
+    margin-bottom: 2px;
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-columns: 3fr 2fr;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.nav-search {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    height: 1.8rem;
+    width: 80%;
+    background: #E2E8F0;
+    border: none;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+
+.search-bar:focus {
+    border: 2px solid darkgrey;
+    outline: none;
+}
+
+.nav-profile {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-weight: bold;
+}
+
+.nav-greeting {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#greeting {
+    font-weight: bold;
+    margin: 0;
+}
+
+#greeting-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.nav-buttons {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-buttons button {
+    width: 30%;
+    height: 30%;
+    background: #1992D4;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+}
+
+/* Sidebar Styles */
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 8;
+    background: #1992D4;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 30px;
+    margin-right: 2px;
+    box-shadow: 2px 0px 2px darkgrey;
+}
+
+#dashboard {
+    font-size: 2.5rem;
+}
+
+.sidebar ul{
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.35rem;
+}
+
+.sidebar ul li {
+    margin: 10px 0 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Body Styles */
+
+.main-body {
+    grid-column: 2 / 6;
+    grid-row: 2 / 8;
+    background: #E2E8F0;
+}
