@@ -32,6 +32,10 @@ body {
     align-items: center;
 }
 
+.nav-search i {
+    margin-right: 10px;
+}
+
 .search-bar {
     height: 1.8rem;
     width: 80%;
@@ -120,6 +124,8 @@ body {
 
 .sidebar ul li {
     margin: 10px 0 10px 0;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
 }
 
 .sidebar ul li a {
@@ -164,11 +170,28 @@ body {
     border-radius: 10px;
     border-left: 10px solid orange;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-card-header {
     font-size: 1.2rem;
     font-weight: bold;
+    margin-bottom: 0;
+}
+
+.project-card-desc {
+    margin: 0;
+}
+
+.project-card-actions {
+    text-align: right;
+}
+
+.project-card-actions i {
+    margin-left: 10px;
+    justify-content: end;
 }
 
 .main-announcements {
